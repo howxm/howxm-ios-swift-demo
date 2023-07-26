@@ -18,5 +18,5 @@ Howxm.initializeSDK(
 )
 ```
 
-- 弹出效果 (系统启动点击按钮弹出)
+## 弹出效果 (系统启动点击按钮弹出)
 ![img.png](img.png)
