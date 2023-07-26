@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7277FB48F039D18F5B78D15D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7277FE833E069210D1D4E04F /* README.md */; };
 		B21FC2D42A70C54B009B942F /* howxm_ios_swift_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21FC2D32A70C54B009B942F /* howxm_ios_swift_demoApp.swift */; };
 		B21FC2D62A70C54B009B942F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21FC2D52A70C54B009B942F /* ContentView.swift */; };
 		B21FC2D82A70C54B009B942F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21FC2D72A70C54B009B942F /* Assets.xcassets */; };
 		B21FC2DB2A70C54B009B942F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21FC2DA2A70C54B009B942F /* Preview Assets.xcassets */; };
+		B21FC2E42A70C5A3009B942F /* Howxm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21FC2E32A70C5A3009B942F /* Howxm.xcframework */; };
+		B21FC2E52A70C5A3009B942F /* Howxm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B21FC2E32A70C5A3009B942F /* Howxm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B21FC2E62A70C5A3009B942F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B21FC2E52A70C5A3009B942F /* Howxm.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7277FE833E069210D1D4E04F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B21FC2D02A70C54B009B942F /* howxm-ios-swift-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "howxm-ios-swift-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21FC2D32A70C54B009B942F /* howxm_ios_swift_demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howxm_ios_swift_demoApp.swift; sourceTree = "<group>"; };
 		B21FC2D52A70C54B009B942F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B21FC2D72A70C54B009B942F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B21FC2DA2A70C54B009B942F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B21FC2E32A70C5A3009B942F /* Howxm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Howxm.xcframework; path = ../howxm/build/Howxm.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21FC2E42A70C5A3009B942F /* Howxm.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +57,8 @@
 			children = (
 				B21FC2D22A70C54B009B942F /* howxm-ios-swift-demo */,
 				B21FC2D12A70C54B009B942F /* Products */,
+				B21FC2E22A70C5A2009B942F /* Frameworks */,
+				7277FE833E069210D1D4E04F /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +89,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B21FC2E22A70C5A2009B942F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B21FC2E32A70C5A3009B942F /* Howxm.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +107,7 @@
 				B21FC2CC2A70C54B009B942F /* Sources */,
 				B21FC2CD2A70C54B009B942F /* Frameworks */,
 				B21FC2CE2A70C54B009B942F /* Resources */,
+				B21FC2E62A70C5A3009B942F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +170,7 @@
 			files = (
 				B21FC2D62A70C54B009B942F /* ContentView.swift in Sources */,
 				B21FC2D42A70C54B009B942F /* howxm_ios_swift_demoApp.swift in Sources */,
+				7277FB48F039D18F5B78D15D /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +301,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"howxm-ios-swift-demo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "howxm-ios-swift-demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -279,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.howxm.howxm-ios-swift-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.howxm.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -297,6 +330,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"howxm-ios-swift-demo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "howxm-ios-swift-demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,7 +341,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.howxm.howxm-ios-swift-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.howxm.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
